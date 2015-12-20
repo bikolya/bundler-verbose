@@ -7,7 +7,8 @@ module Bundler
       end
 
       def prettify(info, spaces)
-        public_send(info).split("\n").map { |line| spaces + "# #{line}" }.join("\n") + "\n"
+        info = public_send(info) || NullGemInfo.new.public_send(info)
+        info.split("\n").map { |line| spaces + "# #{line}" }.join("\n") + "\n"
       end
     end
   end
