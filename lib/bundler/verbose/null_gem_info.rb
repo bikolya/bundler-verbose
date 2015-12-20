@@ -1,11 +1,11 @@
 module Bundler
   module Verbose
     class NullGemInfo
-      def description
+      def info
         ""
       end
 
-      def prettify(info, spaces)
+      def prettify(spaces)
         nil
       end
     end

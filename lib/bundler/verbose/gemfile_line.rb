@@ -24,7 +24,7 @@ module Bundler
       end
 
       def verbosed
-        [raw, info.prettify(:description, spaces_at_beginning)].compact.join("\n") + "\n"
+        [raw, info.prettify(spaces_at_beginning)].compact.join("\n") + "\n"
       end
 
       private
