@@ -9,20 +9,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nikolay Bienko"]
   spec.email         = ["bikolya@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{Simple plugin for Bundler to generate verbose Gemfile with descriptions}
+  spec.description   = %q{Simple plugin for Bundler to generate verbose Gemfile with description of each gem. It may be useful for novice Ruby developers or when you start diving into the new Ruby project.}
   spec.homepage      = "http://github.com/bikolya/bundler-verbose"
   spec.license       = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
-
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   spec.bindir        = "bin"
   spec.executables   = ["bundler-verbose"]
   spec.require_paths = ["lib"]
