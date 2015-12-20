@@ -2,7 +2,7 @@ module Bundler
   module Verbose
     class GemInfo < SimpleDelegator
       def initialize(name)
-        specification = Gem::Specification.find_by_name(name)
+        specification = Gem::Specification.find_all_by_name(name).first
         super(specification)
       end
 
