@@ -11,6 +11,8 @@ module Bundler
       File.open(gemfile + ".verbose", "w") do |f|
         f.puts lines
       end
+
+      puts "Gemfile.verbose was successfully generated!"
     end
   end
 end
