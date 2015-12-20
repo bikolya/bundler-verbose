@@ -18,9 +18,7 @@ module Bundler
       end
 
       def info
-        @info ||= name ? GemInfo.new(name) : NullGemInfo.new
-      rescue Gem::LoadError
-        NullGemInfo.new
+        @info ||= GemInfo.new(name)
       end
 
       def verbosed

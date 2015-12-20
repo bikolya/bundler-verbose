@@ -1,7 +1,6 @@
 require "bundler/verbose/version"
 require "bundler/verbose/gemfile_parser"
 require "bundler/verbose/gem_info"
-require "bundler/verbose/null_gem_info"
 require "bundler/verbose/gemfile_line"
 
 module Bundler
