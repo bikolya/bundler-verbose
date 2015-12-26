@@ -1,6 +1,8 @@
 # Bundler::Verbose
 
-Simple plugin for Bundler to generate verbose Gemfile with description of each gem. It may be useful for novice Ruby developers or when you start diving into new Ruby project.
+Simple plugin for Bundler to generate verbose Gemfile with description of each gem. It may be useful for novice Ruby developers and if you only start diving into new Ruby project.
+
+![Bundler::Verbose Demo](https://cloud.githubusercontent.com/assets/3993468/11920609/87c287ce-a785-11e5-8082-25cdbfde0837.png)
 
 ## Installation and usage
 
@@ -18,11 +20,11 @@ And then execute command in your project directory:
 
     $ bundle verbose
 
-The generated Gemfile.verbose you can add to your VCS and check it out when you forget what some of your gems is doing.
+You can add the generated Gemfile.verbose to your VCS and come back to it when you forget what some of your gems is doing.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/bundler-verbose. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bikolya/bundler-verbose. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License

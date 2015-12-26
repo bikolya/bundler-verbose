@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["bikolya@gmail.com"]
 
   spec.summary       = %q{Simple plugin for Bundler to generate verbose Gemfile with descriptions}
-  spec.description   = %q{Simple plugin for Bundler to generate verbose Gemfile with description of each gem. It may be useful for novice Ruby developers or when you start diving into the new Ruby project.}
+  spec.description   = %q{Simple plugin for Bundler to generate verbose Gemfile with description of each gem. It may be useful for novice Ruby developers and if you only start diving into new Ruby project.}
   spec.homepage      = "http://github.com/bikolya/bundler-verbose"
   spec.license       = "MIT"
 
